@@ -85,7 +85,20 @@
                       <input type="email" placeholder="Write Donation Amount" class="input input-bordered" required id="donate1_input"/>
                     </div>
                     <div class="form-control mt-6">
-                      <button class=" py-3 rounded bg-primary-color" id="donate1_submit">Donate Now</button>
+                      <button class=" py-3 rounded bg-primary-color" id="donate1_submit">Donate Now
+                      </button>
+                      <dialog id="my_modal_1" class="modal">
+                        <div class="modal-box">
+                          <h3 class="text-lg font-bold">Congratulations!</h3>
+                          <p class="py-4">Your Donation is succuessfully Added!</p>
+                          <div class="modal-action">
+                            <form method="dialog">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button class="btn">Close</button>
+                            </form>
+                          </div>
+                        </div>
+                      </dialog>
                     </div>
                   </form>
                 </div>
@@ -99,9 +112,9 @@
             </figure>
             <div class="w-1/2 ">
               <div class="flex flex-col justify-start p-5">
-                <button class="flex items-center space-x-2 bg-[rgba(17,17,17,0.05)] rounded px-3 py-2 mb-4 w-1/4">
+                <button class="flex items-center space-x-2 bg-[rgba(17,17,17,0.05)] rounded px-3 py-2 mb-4 w-1/4" disabled>
                   <img src="../assets/coin.png" alt="" srcset="">
-                  <h4 class=""><span>600</span> BDT</h4>
+                  <h4 class=""><span id="donate2_current_bal">600</span> BDT</h4>
                 </button>
                 <h2 class="card-title">Donate for Flood Relief in Feni, Bangladesh</h2>
                 <br>
@@ -111,10 +124,10 @@
                   <form class="">
                     <div class="form-control">
                       
-                      <input type="email" placeholder="Write Donation Amount" class="input input-bordered" required />
+                      <input type="email" placeholder="Write Donation Amount" class="input input-bordered" required id="donate2_input" />
                     </div>
                     <div class="form-control mt-6">
-                      <button class=" py-3 rounded bg-primary-color">Donate Now</button>
+                      <button class=" py-3 rounded bg-primary-color" id="donate2_submit">Donate Now</button>
                     </div>
                   </form>
                 </div>
@@ -129,9 +142,9 @@
             </figure>
             <div class="w-1/2 ">
               <div class="flex flex-col justify-start p-5">
-                <button class="flex items-center space-x-2 bg-[rgba(17,17,17,0.05)] rounded px-3 py-2 mb-4 w-1/4">
+                <button class="flex items-center space-x-2 bg-[rgba(17,17,17,0.05)] rounded px-3 py-2 mb-4 w-1/4" disabled>
                   <img src="../assets/coin.png" alt="" srcset="">
-                  <h4 class=""><span>2400</span> BDT</h4>
+                  <h4 class=""><span id="donate3_current_bal">2400</span> BDT</h4>
                 </button>
                 <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                 <br>
@@ -141,10 +154,10 @@
                   <form class="">
                     <div class="form-control">
                       
-                      <input type="email" placeholder="Write Donation Amount" class="input input-bordered" required />
+                      <input type="email" placeholder="Write Donation Amount" class="input input-bordered" required id="donate3_input" />
                     </div>
                     <div class="form-control mt-6">
-                      <button class=" py-3 rounded bg-primary-color">Donate Now</button>
+                      <button class=" py-3 rounded bg-primary-color" id="donate3_submit">Donate Now</button>
                     </div>
                   </form>
                 </div>
