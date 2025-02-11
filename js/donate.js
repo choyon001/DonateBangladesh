@@ -1,4 +1,4 @@
-function donate(donateSubmit, donateInput, donateCurrentBal, mainBal) {
+function donate(donateSubmit, donateInput, donateCurrentBal, mainBal,reason) {
     document.getElementById(donateSubmit).addEventListener("click", function(event) {
         event.preventDefault();
         
@@ -26,13 +26,17 @@ function donate(donateSubmit, donateInput, donateCurrentBal, mainBal) {
         console.log("Donation amount: " + donateAmount);
 
         document.getElementById("my_modal_1").showModal();
+
+        // addTransactionToHistory
+
+        addTransactionToHistory(donateAmount, reason);
     });
 }
 
 
-donate("donate1_submit", "donate1_input", "donate1_current_bal", "main_bal");
-donate("donate2_submit", "donate2_input", "donate2_current_bal", "main_bal");
-donate("donate3_submit", "donate3_input", "donate3_current_bal", "main_bal");
+donate("donate1_submit", "donate1_input", "donate1_current_bal", "main_bal","Flood at Noakhali, Bangladesh");
+donate("donate2_submit", "donate2_input", "donate2_current_bal", "main_bal","Flood Relief in Feni,Bangladesh");
+donate("donate3_submit", "donate3_input", "donate3_current_bal", "main_bal","Injured in the Quota Movement");
 
 // modal close
 
